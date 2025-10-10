@@ -18,7 +18,7 @@ namespace Singleton
         public bool IsBoiled { get { return this.boiled; } }
 
         // This code is only started when the boiler is empty
-        public ChocolateBoiler()
+        private ChocolateBoiler()
         {
             empty = true;
             boiled = false;

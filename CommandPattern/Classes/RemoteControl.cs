@@ -42,9 +42,16 @@ namespace CommandPattern.Classes
 
         public void UndoButtonWasPushed()
         {
-            Command lastCommand = undoStack.Pop();
-            Console.WriteLine("undoing");
-            lastCommand.Undo();
+            if (undoStack.Count > 0)
+            {
+                Command lastCommand = undoStack.Pop();
+                Console.WriteLine("undoing");
+                lastCommand.Undo();
+            }
+            else
+            {
+                Console.WriteLine("nothing to undo");
+            }
         }
 
         public override string ToString()

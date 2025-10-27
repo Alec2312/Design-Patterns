@@ -52,6 +52,9 @@ namespace CommandPattern
             remoteControl.UndoButtonWasPushed();
             remoteControl.OnButtonWasPushed(4);
             remoteControl.UndoButtonWasPushed();
+            remoteControl.UndoButtonWasPushed();
+            remoteControl.UndoButtonWasPushed();
+            remoteControl.UndoButtonWasPushed();
             Console.ReadLine();
         }
     }
